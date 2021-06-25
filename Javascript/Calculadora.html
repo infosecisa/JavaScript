@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<input type="number" id="numero1" placeholder="Digite um número">
+	<input type="number" id="numero2" placeholder="Digite outro número">
+	<button type="button" id="soma">+</button>
+	<button type="button" id="subtracao">-</button>
+	<button type="button" id="multiplicacao">*</button>
+	<button type="button" id="divisao">/</button>
+
+
+
+
+
+	<script>
+		
+		function soma(){
+		
+		let criandoh3 = document.createElement("h3");
+		let inputNumero1 = document.querySelector("#numero1");
+		let inputNumero2 = document.querySelector("#numero2");
+		let textoNovo = document.createTextNode(` A soma é ${parseInt(inputNumero1.value) + parseInt(inputNumero2.value)} `);
+
+
+		criandoh3.appendChild(textoNovo);
+		document.body.appendChild(criandoh3);
+
+		}
+
+		let botaoSoma = document.querySelector("#soma");
+		botaoSoma.onclick = soma;
+
+		function subtracao(){
+		
+		let criandoh3 = document.createElement("h3");
+		let inputNumero1 = document.querySelector("#numero1");
+		let inputNumero2 = document.querySelector("#numero2");
+		let textoNovo = document.createTextNode(` A subtração é ${parseInt(inputNumero1.value) - parseInt(inputNumero2.value)} `);
+
+
+		criandoh3.appendChild(textoNovo);
+		document.body.appendChild(criandoh3);
+
+		}
+
+		let botaoSubtracao = document.querySelector("#subtracao");
+		botaoSubtracao.onclick = subtracao;
+
+		function multiplicacao(){
+		
+		let criandoh3 = document.createElement("h3");
+		let inputNumero1 = document.querySelector("#numero1");
+		let inputNumero2 = document.querySelector("#numero2");
+		let textoNovo = document.createTextNode(` A multiplicação é ${parseInt(inputNumero1.value) * parseInt(inputNumero2.value)} `);
+
+
+		criandoh3.appendChild(textoNovo);
+		document.body.appendChild(criandoh3);
+
+		}
+
+		let botaoMultiplicacao = document.querySelector("#multiplicacao");
+		botaoMultiplicacao.onclick = multiplicacao;
+
+
+		function divisao(){
+		
+		let criandoh3 = document.createElement("h3");
+		let inputNumero1 = document.querySelector("#numero1");
+		let inputNumero2 = document.querySelector("#numero2");
+		let textoNovo = document.createTextNode(` A divisão é ${parseInt(inputNumero1.value) / parseInt(inputNumero2.value)} `);
+
+
+		criandoh3.appendChild(textoNovo);
+		document.body.appendChild(criandoh3);
+
+		}
+
+		let botaoDivisao = document.querySelector("#divisao");
+		botaoDivisao.onclick = divisao;
+
+
+	</script>
+
+</body>
+</html>

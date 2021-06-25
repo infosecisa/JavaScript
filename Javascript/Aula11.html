@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>AULA 11</title>
+	<link rel="stylesheet" type="text/css" href="Aula11.css">
+	
+</head>
+
+<body>
+
+	<input type="text" id="nome" class="estilo" placeholder="Digite o seu nome aqui">
+	
+	<input type="text" id="idade" class="estilo" placeholder="Digite a sua idade aqui">
+	<button type="button" id="botao">Ok!</button>
+
+
+	
+
+
+<script >
+
+		function mostrarNome(){
+		let criandoh1 = document.createElement("h1");
+		let inputNome = document.querySelector("#nome");
+		let inputIdade = document.querySelector("#idade");
+		let textoNovo = document.createTextNode(`Bem vindo ${inputNome.value}, sua idade é ${inputIdade.value} `);
+
+		criandoh1.appendChild(textoNovo);
+		document.body.appendChild(criandoh1);
+
+		}
+
+		let botaoOK = document.querySelector("#botao");
+		botaoOK.onclick = mostrarNome;
+
+	</script>
+	
+
+</body>
+</html>
